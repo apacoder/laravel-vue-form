@@ -1,9 +1,38 @@
+<script>
+const name = () => {
+    console.log(asd);
+};
+export default {
+    data() {
+        return {
+            count: 0,
+            info: null,
+        };
+    },
+
+    methods: {
+        increment() {
+            this.count++;
+        },
+    },
+
+    mounted() {
+        console.clear();
+        axios
+            .post("/lista", {
+                a: "cccccasd",
+                b: "bbbbbbbs",
+                d: 32,
+                e: true,
+            })
+            .then((res) => {
+                console.log(JSON.stringify(res.data, null, 2));
+                this.info = res.data
+            });
+    },
+};
+</script>
+
 <template>
-    <div class="h-screen font-bold flex justify-center items-center text-8xl text-sky-900 cursor-text flex-col overflow-scroll">
-       <div class="mb-4 text-uca-azul-light">UCA Empleos</div>
-       <div class="mb-4 text-uca-azul-base">UCA Empleos</div>
-       <div class="mb-4 text-uca-azul-dark">UCA Empleos</div>
-       <div class="mb-4 text-uca-amarillo">UCA Empleos</div>
-       <div class="mb-4 text-black">UCA Empleos</div>
-    </div>
+    <pre>{{ info }}</pre>
 </template>

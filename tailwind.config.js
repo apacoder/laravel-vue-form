@@ -7,7 +7,18 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        uca: {
+          azul: {
+            light: '#6683ac',
+            base: '#003C71',
+            dark: '#042354'
+          },
+          amarillo: '#fdc018'
+        }
+      }
+    },
   },
   plugins: [],
 }

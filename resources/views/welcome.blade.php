@@ -7,8 +7,8 @@
     <title>Vue 3</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="bg-blue-50">
 	{{-- Contenedor único que mantendrá toda la aplicación --}}
-	<div id="app"></div>
+    <div id="app"></div>
 </body>
 </html>

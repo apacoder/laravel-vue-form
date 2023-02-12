@@ -1,5 +1,7 @@
 import './bootstrap';
 import {createApp} from 'vue'
 import App from './src/components/App.vue'
+import { pp } from "./src/utils/utils";
 
-createApp(App).mount("#app")
+const app = createApp(App)
+const mountedApp = app.mount("#app");

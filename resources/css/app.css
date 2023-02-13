@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-    .input-text {
-        @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+    .form-input {
+        @apply text-gray-500 border border-gray-200 rounded-lg p-2 leading-tight focus:outline-none focus:ring-1 focus:ring-blue-200 focus:border-sky-400;
     }
 
     .form-grid {
